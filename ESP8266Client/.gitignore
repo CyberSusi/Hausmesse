@@ -1,0 +1,11 @@
+.pio
+.clang_complete
+.gcc-flags.json
+.ccls
+.cache
+.vscode
+.rider
+.idea
+compile_commands.json
+
+secrets.hpp

@@ -1,0 +1,11 @@
+﻿{
+  "printWidth": 120,
+  "bracketSpacing": true,
+  "singleQuote": false,
+  "arrowParens": "avoid",
+  "trailingComma": "all",
+  "bracketSameLine": true,
+  "semi": false,
+  "plugins": ["prettier-plugin-tailwindcss", "prettier-plugin-organize-imports"],
+  "tailwindFunctions": ["clsx"]
+}
