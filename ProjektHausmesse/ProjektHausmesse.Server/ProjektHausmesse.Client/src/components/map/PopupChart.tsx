@@ -20,12 +20,14 @@ const PopupChart: React.FC<PopupChartProps> = ({ container }) => {
     initialData: [],
   })
 
-  const chartData = data.map(measurement => ({
-    date: new Date(measurement.date).toLocaleDateString(),
-    time: new Date(measurement.date).toTimeString().substring(0, 9),
-    distance: measurement.distance,
-    fillLevel: ((container.sensor.curDistance / container.sensor.maxDistance) * 100).toFixed(1),
-  }))
+  const chartData = data
+    .map(measurement => ({
+      date: new Date(measurement.date).toLocaleDateString(),
+      time: new Date(measurement.date).toTimeString().substring(0, 9),
+      distance: measurement.distance,
+      fillLevel: ((container.sensor.curDistance / container.sensor.maxDistance) * 100).toFixed(1),
+    }))
+    .reverse()
 
   return (
     <div className={"w-56 sm:w-96 h-56 mt-5"}>
