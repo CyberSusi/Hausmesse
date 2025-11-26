@@ -47,10 +47,12 @@ export default function ContainerPanel({container, className, setHoverContainer,
           <CardContent>
             <p className={"p-1 leading-none font-semibold"}>{container.name}</p>
             <p className={"p-1 leading-none"}>zu {getCapacity().toFixed(0)} % gefüllt</p>
-            <p className={"p-1 leading-none"}>
+            {
+            /*<p className={"p-1 leading-none"}>
               Letztes Update:
               <span className={"block mt-1"}>{container.sensor.lastUpdate}</span>
-            </p>
+            </p>*/
+            } 
           </CardContent>
         </Card>
       </>
